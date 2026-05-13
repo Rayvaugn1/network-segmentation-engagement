@@ -1,1 +1,31 @@
+# Palo Alto Firewall – Security Enforcement Layer
 
+## Role
+The Palo Alto firewall is the central security enforcement point for all inter-VLAN and internet-bound traffic.
+
+## Key Configuration Functions
+
+### 1. Interface Segmentation
+- ethernet1/1 → Untrust (Internet-facing)
+- ethernet1/2.10 → VLAN 10 (Users)
+- ethernet1/2.20 → VLAN 20 (Servers)
+- ethernet1/2.30 → VLAN 30 (Finance)
+- ethernet1/2.40 → VLAN 40 (Engineering)
+
+### 2. Security Zones
+Each VLAN is assigned a dedicated security zone to enforce isolation and policy control:
+- Users Zone
+- Servers Zone
+- Finance Zone
+- Engineering Zone
+- Untrust Zone
+
+### 3. Security Policy Enforcement
+- Blocks unauthorized access to server VLAN (VLAN 20)
+- Allows Engineering access to server resources
+- Permits controlled east-west communication between user VLANs
+- Enforces explicit allow/deny segmentation rules
+
+### 4. NAT Configuration
+- Dynamic outbound NAT applied for all internal VLANs to internet (Untrust zone)
+- No NAT applied between internal VLANs (preserves segmentation integrity)
