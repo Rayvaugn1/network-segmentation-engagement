@@ -1,0 +1,15 @@
+# R2 – Finance Router (VLAN 30 Endpoint Router)
+
+## Role
+R2 acts as a Layer 3 endpoint within VLAN 30 (Finance network segment).
+
+## Key Configuration Functions
+
+- Static IP assignment within VLAN 30 subnet
+- Default gateway routing toward firewall interface
+- Participates in OSPF or static routing depending on topology design
+
+## Design Notes
+
+- Used primarily to simulate department-level routing behavior
+- No direct inter-VLAN routing capability
