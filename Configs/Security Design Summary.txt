@@ -1,0 +1,39 @@
+## Segmentation Model
+
+- VLAN-based segmentation at Layer 2
+- Zone-based enforcement at Layer 3/4 firewall level
+- Explicit deny rules protecting server infrastructure
+- Controlled inter-VLAN communication for business continuity
+
+## Key Security Controls
+
+- East-west traffic filtering
+- Server VLAN isolation (VLAN 20 protection)
+- Least privilege access model
+- Stateful firewall inspection
+- NAT separation for internal vs external traffic
+
+---
+
+# Operational Flow
+
+1. Endpoint devices connect to access switches (SW2/SW3)
+2. VLAN tagging is enforced at access layer
+3. Trunk links propagate VLANs to core switch (SW1)
+4. Traffic is routed to Palo Alto firewall
+5. Firewall enforces security policy (allow/deny)
+6. Allowed traffic is routed to:
+   - Internal VLAN destinations OR
+   - Internet via NAT
+
+---
+
+# Purpose of This Implementation
+
+This configuration demonstrates a production-style enterprise segmentation architecture focused on:
+
+- Reducing lateral movement risk
+- Protecting critical server infrastructure
+- Enforcing department-level isolation
+- Maintaining controlled inter-VLAN communication
+- Providing scalable firewall-based security enforcement
