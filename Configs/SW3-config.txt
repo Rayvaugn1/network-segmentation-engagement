@@ -1,0 +1,16 @@
+# SW3 – Access Switch (Servers & Engineering Segment)
+
+## Role
+SW3 provides endpoint connectivity for VLAN 20 (Servers) and VLAN 40 (Engineering).
+
+## Key Configuration Functions
+
+- VLAN 20 assigned to server infrastructure
+- VLAN 40 assigned to engineering router (R3)
+- Trunk uplink to SW1 for VLAN propagation
+- Access ports configured per VLAN segmentation model
+
+## Design Notes
+
+- Server VLAN (20) is protected at firewall layer
+- Engineering VLAN has controlled access based on security policy
