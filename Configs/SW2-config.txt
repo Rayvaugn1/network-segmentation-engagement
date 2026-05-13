@@ -1,0 +1,16 @@
+# SW2 – Access Switch (Users & Finance Segment)
+
+## Role
+SW2 provides endpoint connectivity for VLAN 10 (Users) and VLAN 30 (Finance).
+
+## Key Configuration Functions
+
+- VLAN 10 assigned to user endpoints (PC1)
+- VLAN 30 assigned to finance routing device (R2)
+- Trunk uplink to SW1 carries all VLAN traffic
+- PortFast enabled for endpoint interfaces
+
+## Design Notes
+
+- No inter-VLAN routing performed at switch layer
+- VLAN separation enforced via access port assignments only
