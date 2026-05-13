@@ -1,0 +1,17 @@
+# R1 – Edge Router (WAN Aggregation Layer)
+
+## Role
+R1 serves as the edge routing device connecting the internal enterprise network to the upstream ISP (AT&T).
+
+## Key Configuration Functions
+
+- Receives WAN IP dynamically via DHCP from ISP
+- Routes internal traffic toward the firewall
+- Maintains default route propagation toward external networks
+- Provides upstream connectivity between ISP and internal security stack
+
+## Key Design Notes
+
+- No VLAN processing occurs on this device
+- Acts purely as a Layer 3 transit router
+- All internal segmentation is handled downstream at the firewall
