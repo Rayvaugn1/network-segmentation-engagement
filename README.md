@@ -180,4 +180,4 @@ Traffic was captured using a SPAN port configured on the core switch to monitor 
 
 # Final Outcome
 
-This project successfully demonstrated the transition from a flat enterprise network to a segmented security architecture using Palo Alto firewall policy enforcement and Cisco switching infrastructure. The final design preserved legitimate business communication while restricting unauthorized access to protected server resources.
+This Implementation successfully demonstrated the transition from a flat enterprise network to a segmented security architecture using Palo Alto firewall policy enforcement and Cisco switching infrastructure. The final design preserved legitimate business communication while restricting unauthorized access to protected server resources.
