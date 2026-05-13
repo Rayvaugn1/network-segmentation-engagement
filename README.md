@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the deployment, validation, and remediation of an enterprise-style segmented network using Cisco infrastructure and a Palo Alto Networks firewall. The lab was intentionally deployed in an insecure state to simulate lateral movement vulnerabilities before implementing proper segmentation controls and firewall enforcement.
+This technical implementation demonstrates the deployment, validation, and remediation of an enterprise-style segmented network using Cisco infrastructure and a Palo Alto Networks firewall. The lab was intentionally deployed in an insecure state to simulate lateral movement vulnerabilities before implementing proper segmentation controls and firewall enforcement.
 
 The environment includes VLAN segmentation, inter-VLAN routing, Palo Alto security zones, NAT, traffic monitoring, SPAN/Wireshark analysis, and security policy remediation.
 
