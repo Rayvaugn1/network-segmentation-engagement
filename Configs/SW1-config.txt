@@ -1,0 +1,16 @@
+# SW1 – Core Switch (Distribution Layer)
+
+## Role
+SW1 acts as the central Layer 2 aggregation switch connecting all access layer switches to the firewall.
+
+## Key Configuration Functions
+
+- VLAN trunk aggregation point
+- VLAN propagation between access switches and firewall
+- 802.1Q trunking enabled across all uplinks
+- No routing functions (Layer 2 only)
+
+## Design Notes
+
+- All VLANs (10, 20, 30, 40) are allowed across trunk links
+- Core switch remains intentionally unaware of security policies (enforced at firewall layer)
