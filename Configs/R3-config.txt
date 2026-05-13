@@ -1,0 +1,15 @@
+# R3 – Engineering Router (VLAN 40 Endpoint Router)
+
+## Role
+R3 functions as a Layer 3 endpoint within VLAN 40 (Engineering network segment).
+
+## Key Configuration Functions
+
+- Static IP assignment within VLAN 40 subnet
+- Routing toward firewall for inter-network communication
+- Used to validate controlled access to server resources (VLAN 20)
+
+## Design Notes
+
+- Engineering VLAN is the only segment permitted to access server resources
+- Used to validate segmentation policy enforcement
