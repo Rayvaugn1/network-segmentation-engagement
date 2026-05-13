@@ -161,7 +161,6 @@ Traffic was captured using a SPAN port configured on the core switch to monitor 
 ├── /images
 ├── /configs
 ├── /captures
-└── /documentation
 ```
 
 ---
